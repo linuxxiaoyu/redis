@@ -1584,6 +1584,7 @@ extern dictType modulesDictType;
  *----------------------------------------------------------------------------*/
 
 /* Modules */
+void ntinsertCommand(client *c);
 void moduleInitModulesSystem(void);
 int moduleLoad(const char *path, void **argv, int argc);
 void moduleLoadFromQueue(void);
