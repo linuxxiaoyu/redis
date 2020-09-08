@@ -180,6 +180,10 @@ volatile unsigned long lru_clock; /* Server global current LRU time. */
  */
 
 struct redisCommand redisCommandTable[] = {
+    {"ntinsert", ntinsertCommand, 2, 
+     "m", 
+     0,NULL,0,0,0,0,0,0},
+    
     {"module",moduleCommand,-2,
      "admin no-script",
      0,NULL,0,0,0,0,0,0},
